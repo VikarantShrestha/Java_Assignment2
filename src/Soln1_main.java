@@ -3,7 +3,7 @@ public class Soln1_main
     public static void main(String arg[])
     {
         Soln1 ob = new Soln1();
-       String[] arr={"hell"};
+       String[] arr={"temperature","temps","tempo","temper"};
 
        for(int i=0; i<arr.length; i++)
        {

@@ -1,6 +1,6 @@
 public class Soln1 
 {
-    String lcp="",buff="";
+    String lcp="",buffer="";
 
     void lcp_finder(String s)
     {
@@ -13,14 +13,20 @@ public class Soln1
         {
             if(lcp.charAt(i)==s.charAt(i))
             {
-                buff=buff+s.charAt(i);
+                buffer=buffer+s.charAt(i);
             }
             else
             {
                 break;
             }
         }
-        lcp = buff;
-        buff="";
+        if(buffer.equals(""))
+        {
+            System.out.println("no common prefix found");
+            System.exit(1);
+        }
+        
+        lcp = buffer;
+        buffer="";
     }    
 }
